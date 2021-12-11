@@ -1,5 +1,8 @@
 import './sass/main.scss';
 import axios from "axios";
+
+import pictureItem from './picture-item';
+
 axios.get('/users')
   .then(res => {
     console.log(res.data);
