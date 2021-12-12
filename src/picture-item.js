@@ -1,5 +1,7 @@
+
+
 export default function pictureItem(data) {
-  const pictureMurkup = data.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
+  return pictureMurkup.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
     return `
     <a class="gallery__item" href="${largeImageURL}>
       <div class="photo-card">
@@ -26,4 +28,8 @@ export default function pictureItem(data) {
 
 
 
-
+// const lightbox = new SimpleLightbox('.gallery a', {
+//     captionsData: "alt",
+//     captionDelay: 250,
+//     captionPosition: 'bottom'
+// });
