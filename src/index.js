@@ -14,7 +14,11 @@ const imageSearchForm = document.querySelector('.search-form');
 const galleryImages = document.querySelector('.gallery');
 // const imageBox = document.querySelector('.box');
 let lightbox = new SimpleLightbox('.gallery a');
-
+// const lightbox = new SimpleLightbox('.gallery a', {
+//     captionsData: "alt",
+//     captionDelay: 250,
+//     captionPosition: 'bottom'
+// });
 
 const pixabayItem = new ImageApi();
 const buttonLoadMore = new ButtonLoadMore({
@@ -74,14 +78,14 @@ function fetchPicture(event) {
 
 function emptyPicture(array) {
   if (array.length === 0) {
-    buttonLoadMore.hide();
+    buttonLoadMore.hideButton();
     Notify.failure('Sorry, there are no images matching your search query. Please try again.');
   }
 }
 
 function endOfSearch() {
   if (galleryImages.children.length >= totalHits) {
-    buttonLoadMore.hide();
+    buttonLoadMore.hideButton();
     Notify.failure("We're sorry, but you've reached the end of search results.");
   }
   if (galleryImages.children.length > 40) {

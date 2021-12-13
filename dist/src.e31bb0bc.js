@@ -235,11 +235,7 @@ function pictureItems(photo) {
     </div>
   </a>`;
   }).join('');
-} // const lightbox = new SimpleLightbox('.gallery a', {
-//     captionsData: "alt",
-//     captionDelay: 250,
-//     captionPosition: 'bottom'
-// });
+}
 },{}],"button-loadmore.js":[function(require,module,exports) {
 "use strict";
 
@@ -4217,7 +4213,12 @@ const totalHits = 500;
 const imageSearchForm = document.querySelector('.search-form');
 const galleryImages = document.querySelector('.gallery'); // const imageBox = document.querySelector('.box');
 
-let lightbox = new _simplelightbox.default('.gallery a');
+let lightbox = new _simplelightbox.default('.gallery a'); // const lightbox = new SimpleLightbox('.gallery a', {
+//     captionsData: "alt",
+//     captionDelay: 250,
+//     captionPosition: 'bottom'
+// });
+
 const pixabayItem = new _pixabay.default();
 const buttonLoadMore = new _buttonLoadmore.default({
   selector: '.load-more',
@@ -4265,7 +4266,7 @@ function fetchPicture(event) {
 
 function emptyPicture(array) {
   if (array.length === 0) {
-    buttonLoadMore.hide();
+    buttonLoadMore.hideButton();
 
     _notiflix.Notify.failure('Sorry, there are no images matching your search query. Please try again.');
   }
@@ -4273,7 +4274,7 @@ function emptyPicture(array) {
 
 function endOfSearch() {
   if (galleryImages.children.length >= totalHits) {
-    buttonLoadMore.hide();
+    buttonLoadMore.hideButton();
 
     _notiflix.Notify.failure("We're sorry, but you've reached the end of search results.");
   }
