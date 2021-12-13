@@ -1,11 +1,9 @@
-
-
-export default function pictureItem(data) {
-  return pictureMurkup.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
+export default function pictureItems(photo) {
+  return photo.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
     return `
     <a class="gallery__item" href="${largeImageURL}>
       <div class="photo-card">
-        <img class="picture-image" src="${webformatURL}" alt="${tags}" loading="lazy" />
+        <img class="gallery__image" src="${webformatURL}" alt="${tags}" loading="lazy" />
         
         <div class="info">
           <p class="info-item">

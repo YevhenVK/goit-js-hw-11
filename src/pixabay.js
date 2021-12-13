@@ -1,11 +1,11 @@
-import axios from "axios";
+import axios from 'axios';
 
 const BASE_URL = 'https://pixabay.com/api/?key=24769974-87e6e402804bf8652178f78ec';
 
 export default class ImageApi {
     constructor() {
-        this.page = 1;
         this.searchQuery = '';
+        this.page = 1;
         this.imageOnPage = 40;
     }
     fetchPicture() {
@@ -17,8 +17,8 @@ export default class ImageApi {
     get query() {
         return this.searchQuery;
     }
-    set query(obj) {
-        this.searchQuery = obj;
+    set query(newQuery) {
+        this.searchQuery = newQuery;
     }
 
     resetPage() {
