@@ -13,9 +13,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: antiquewhite;
   color: #212121;
   line-height: 1.5;
+  text-align: center;
 }
 
 img {
@@ -39,6 +40,10 @@ img {
   margin-right: auto;
 }
 
+.box {
+  text-align: center;
+}
+
 .load-more {
   margin-left: auto;
   margin-right: auto;
@@ -53,23 +58,13 @@ img {
   display: none;
 }
 
-.gallery-box {
-  background-color: antiquewhite;
-  color: black;
-  text-align: center;
-}
-
 .search-form {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.info {
-  display: flex;
-  justify-content: center;
-}
-
 .gallery__item {
+  display: block;
   position: relative;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
@@ -83,6 +78,19 @@ img {
   width: 100%;
   object-fit: cover;
   transition: transform var(--animation-duration) var(--timing-function);
+}
+
+.info {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.info-item {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /*!
 	By André Rinas, www.andrerinas.de

@@ -13,7 +13,9 @@ const totalHits = 500;
 const imageSearchForm = document.querySelector('.search-form');
 const galleryImages = document.querySelector('.gallery');
 // const imageBox = document.querySelector('.box');
+
 let lightbox = new SimpleLightbox('.gallery a');
+
 // const lightbox = new SimpleLightbox('.gallery a', {
 //     captionsData: "alt",
 //     captionDelay: 250,
@@ -30,10 +32,10 @@ const buttonLoadMore = new ButtonLoadMore({
 imageSearchForm.addEventListener('submit', submitForm);
 buttonLoadMore.refs.button.addEventListener('click', fetchPicture);
 
+
 function addImageList(photos) {
   galleryImages.insertAdjacentHTML('beforeend', pictureItems(photos));
 }
-
 
 function clearImageList() {
   galleryImages.innerHTML = '';
