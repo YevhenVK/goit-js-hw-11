@@ -11,8 +11,9 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const totalHits = 500;
 
 const imageSearchForm = document.querySelector('.search-form');
-const galleryImages = document.querySelector('.gallery');
 // const imageBox = document.querySelector('.box');
+
+const galleryImages = document.querySelector('.gallery');
 
 let lightbox = new SimpleLightbox('.gallery a');
 

@@ -214,7 +214,7 @@ function pictureItems(photo) {
     downloads
   }) => {
     return `
-    <a class="gallery__item" href="${largeImageURL}>
+    <a class="gallery__item" href="${largeImageURL}">
       <div class="photo-card">
         <img class="gallery__image" src="${webformatURL}" alt="${tags}" loading="lazy" />
         
@@ -4210,9 +4210,9 @@ require("simplelightbox/dist/simple-lightbox.min.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const totalHits = 500;
-const imageSearchForm = document.querySelector('.search-form');
-const galleryImages = document.querySelector('.gallery'); // const imageBox = document.querySelector('.box');
+const imageSearchForm = document.querySelector('.search-form'); // const imageBox = document.querySelector('.box');
 
+const galleryImages = document.querySelector('.gallery');
 let lightbox = new _simplelightbox.default('.gallery a'); // const lightbox = new SimpleLightbox('.gallery a', {
 //     captionsData: "alt",
 //     captionDelay: 250,
