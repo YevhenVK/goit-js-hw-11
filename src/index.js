@@ -8,7 +8,7 @@ import ImageApi from './pixabay';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const totalHits = 500;
+// const totalHits = 500;
 
 const imageSearchForm = document.querySelector('.search-form');
 // const imageBox = document.querySelector('.box');

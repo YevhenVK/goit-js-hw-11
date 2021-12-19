@@ -4209,7 +4209,7 @@ require("simplelightbox/dist/simple-lightbox.min.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const totalHits = 500;
+// const totalHits = 500;
 const imageSearchForm = document.querySelector('.search-form'); // const imageBox = document.querySelector('.box');
 
 const galleryImages = document.querySelector('.gallery');
@@ -4332,7 +4332,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49268" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49511" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
