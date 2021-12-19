@@ -53,10 +53,15 @@ img {
   color: aliceblue;
   margin-top: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .load-more.is-hidden {
   display: none;
+}
+
+.load-more:hover {
+  background-color: #bd6801;
 }
 
 .search-form {
